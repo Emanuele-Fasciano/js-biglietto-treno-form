@@ -1,0 +1,13 @@
+ /* reset */
+ img,
+ svg,
+ picture,
+ video {
+     max-width: 100%;
+ }
+ 
+
+ [class*=col]{
+    background-color: red;
+    border: 1px solid black;
+ }
