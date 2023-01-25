@@ -26,14 +26,56 @@
 
 <body>
     <section>
-        <div class="container">
-            <h2></h2>
-            <form action="">
-                <input type="text" id="userAge" placeholder="Inserire l'età">
-                <input type="text" id="userKm">
-                <button type="button">Click Me</button>
-            </form>
+        <div class="container mt-4">
+            <h2 class="text-center">CALCOLA IL TUO BIGLIETTO</h2>
+            <div class="row calculate bg-white rounded">
+                <div class="col-4 text-center">
+                    <label for="">Nome e Cognome</label>
+                    <input type="text" id="name_and_surname">
+                </div>
+                <div class="col-4 text-center">
+                    <label for="">Km da percorrere</label>
+                    <input type="text" id="km">
+                </div>
+                <div class="col-4 text-center">
+                    <label for="">Età Passeggero</label>
+                    <input type="text" id="age">
+                </div>
+                <div class="col-12 text-center">
+                    <button type="button" class="my-4" id="calculate_tiket">Genera</button>
+                </div>
+            </div>
         </div>
+
+        <div class="container mt-5">
+            <h2 class="text-center">IL TUO BIGLIETTO</h2>
+            <div class="row your-tiket bg-white py-4">
+                <h3>Dettaglio Passeggeri</h3>
+                <div class="col-4 bg-secondary">
+                    <h4>Nome Passeggero</h4>
+                    <h4 id="name_printed"></h4>
+                </div>
+                <div class="col-8 border-top border-bottom border-secondary">
+                    <div class="row">
+                        <div class="col-3">
+                            <p class="fw-bold">Offerta</p>
+                            <p>biglietto Standard</p>
+                        </div>
+                        <div class="col-3">
+                            <p class="fw-bold">Carrozza</p>
+                            <p id="coach_number"></p>
+                        </div>
+                        <div class="col-3">
+                            <p class="fw-bold">Codice CP</p>
+                            <p id="random_code"></p>
+                        </div>
+                        <div class="col-3">
+                            <p class="fw-bold">Costo biglietto</p>
+                            <p id="tiketPrice"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>

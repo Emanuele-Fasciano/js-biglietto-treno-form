@@ -5,9 +5,44 @@
  video {
      max-width: 100%;
  }
- 
 
- [class*=col]{
-    background-color: red;
-    border: 1px solid black;
+ /* body */
+ body {
+     background-color: #B91450;
+ }
+
+ /* main */
+ h2 {
+     color: white;
+     font-weight: bold;
+ }
+
+ input {
+     border-color: #B91450;
+     border-radius: 5px;
+ }
+
+ button {
+     color: #B91450;
+     background-color: white;
+     color: #B91450;
+     border-radius: 20px;
+     border-color: #B91450;
+     padding: 10px;
+     cursor: pointer;
+ }
+
+ button:hover {
+     color: white;
+     background-color: #B91450;
+ }
+
+ .row.your-tiket {
+     height: 200px;
+ }
+
+ label {
+     color: #B91450;
+     margin-bottom: 2rem;
+     font-weight: bold;
  }
